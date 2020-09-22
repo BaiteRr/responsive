@@ -5,7 +5,7 @@ const CopyPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimazeCssAssetPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
-const {BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 
 const isDev = process.env.NODE_ENV === 'development'
@@ -51,14 +51,14 @@ const cssLoaders = extra => {
 
 const jsLoaders = () => {
     const loaders = [{
-        loader: 'babel-loader', 
+        loader: 'babel-loader',
         options: {
             presets: [
                 '@babel/preset-env'
             ]
         }
-    }]        
-    
+    }]
+
     if (isDev) {
         loaders.push('eslint-loader')
     }
@@ -78,8 +78,8 @@ const plugins = () => {
         new CopyPlugin({
             patterns: [
                 {
-                    from: path.resolve(__dirname, './src/img/favicon.ico'),
-                    to: path.resolve(__dirname, './dock/img')
+                    from: path.resolve(__dirname, './src/img/'),
+                    to: path.resolve(__dirname, './docs/img')
                 },
 
             ]
@@ -93,7 +93,7 @@ const plugins = () => {
         base.push(new BundleAnalyzerPlugin())
     }
 
-    return base 
+    return base
 }
 
 module.exports = {
@@ -104,7 +104,7 @@ module.exports = {
     },
     output: {
         filename: filename('js'),
-        path: path.resolve(__dirname, 'dock')
+        path: path.resolve(__dirname, 'docs')
     },
     resolve: {
         extensions: ['.js', '.json', '.png'],
