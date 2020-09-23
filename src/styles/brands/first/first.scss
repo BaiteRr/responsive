@@ -1,0 +1,91 @@
+.brands {
+
+    // .brands__row
+
+    &__row {
+        display: flex;
+        font-size: 0;
+    }
+
+    // .brands__column
+
+    &__column {
+        flex: 0 1 33.333%;
+        // .brands__column_b
+
+        &_b {
+            flex: 0 1 66.667%;
+        }
+    }
+
+    // .brands__item
+
+    &__item {}
+
+    // .brands__content
+
+    &__content {
+        padding: 70px 65px 55px 65px;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            margin: 0 0 0 -10px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #fff;
+        }
+    }
+
+    // .brands__image
+
+    &__image {
+        padding: 0 0 37.51% 0;
+    }
+}
+
+.item {
+    height: 100%;
+    display: block;
+    position: relative;
+    // .item__logo
+
+    &__logo {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        font-size: 0;
+        transition: all 0.3s ease 0s;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(100, 194, 158, .5);
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    // .item__image
+
+    &__image {
+        position: absolute !important;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &:hover {
+        .item__logo {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
