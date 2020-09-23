@@ -54,4 +54,14 @@
             }
         }
     }
+
+    @media (max-width: 1500px) {
+        &__text {
+            &_j {
+                &:after {
+                    margin: 15px auto 0 auto;
+                }
+            }
+        }
+    }
 }

@@ -311,6 +311,9 @@ table {
         width: 50px;
         height: 1px;
         background-color: #ebebeb; }
+  @media (max-width: 1500px) {
+    .block__text_j:after {
+      margin: 15px auto 0 auto; } }
 
 .brands__row {
   display: flex;
@@ -329,15 +332,24 @@ table {
     position: absolute;
     bottom: -10px;
     left: 50%;
-    margin: 0 0 0 -10px;
+    margin: 0px 0px 0px -10px;
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid #fff; }
+    border-top: 10px solid #fff;
+    z-index: 5; }
 
 .brands__image {
   padding: 0 0 37.51% 0; }
+
+@media (max-width: 1500px) {
+  .brands__content {
+    padding: 40px 35px 30px 35px; } }
+
+@media (max-width: 1100px) {
+  .brands__row {
+    flex-direction: column; } }
 
 .item {
   height: 100%;
@@ -367,6 +379,10 @@ table {
   .item:hover .item__logo {
     opacity: 1;
     visibility: visible; }
+  @media (max-width: 1100px) {
+    .item {
+      height: auto;
+      padding-bottom: 70%; } }
 
 .ibg {
   background-position: center;
