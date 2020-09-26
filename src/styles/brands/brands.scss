@@ -91,6 +91,9 @@
 
     &__logo {
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        font-size: 0;
         width: 100%;
         height: 100%;
         top: 0;
@@ -104,6 +107,14 @@
         z-index: 2;
         opacity: 0;
         visibility: hidden;
+        span {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2.8px;
+            color: #fff;
+        }
     }
 
     // .item__image
