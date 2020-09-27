@@ -3,8 +3,7 @@
     // .shop__body
 
     &__body {
-        display: flex;
-        font-size: 0;
+        @extend %flexbox;
     }
 
     // .shop__column
@@ -71,8 +70,7 @@
     // .block-shop__row
 
     &__row {
-        display: flex;
-        font-size: 0;
+        @extend %flexbox;
     }
 
     // .block-shop__column

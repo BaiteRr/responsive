@@ -9,8 +9,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    display: flex;
-    font-size: 0;
+    @extend %flexbox;
     flex-direction: column;
 }
 
@@ -22,8 +21,7 @@
     top: 35px;
 
     &__row {
-        display: flex;
-        font-size: 0;
+        @extend %flexbox;
         justify-content: center;
         align-items: center;
         height: 85px;
@@ -50,8 +48,7 @@
 
 .menu {
     &__list {
-        display: flex;
-        font-size: 0;
+        @extend %flexbox;
 
         li {
             position: relative;
