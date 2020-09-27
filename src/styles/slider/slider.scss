@@ -5,8 +5,7 @@
         overflow: hidden;
     }
     .slick-track {
-        display: flex;
-        font-size: 0;
+        @extend %flexbox;
         align-items: flex-start;
     }
 }
@@ -21,7 +20,7 @@
     &__body {
         .slick-dots {
             padding-top: 100px;
-            display: flex;
+            @extend %flexbox;
             justify-content: center;
             align-items: center;
             @media (max-width: 1100px) {

@@ -1,3 +1,9 @@
+%flexbox {
+    display: flex;
+    font-size: 0;
+}
+
+@import "~normalize.css";
 @import './null.scss';
 @import './firstScreen/firstScreen.scss';
 @import './generation/generation.scss';
@@ -5,12 +11,6 @@
 @import './slider/slider.scss';
 @import './shop/shop.scss';
 @import './subscribe/subscribe.scss';
+@import './footer/footer.scss';
 @import './ibg/ibg.scss';
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
-
-
-.container {
-    max-width: 1130px;
-    padding: 0 15px;
-    margin: 0 auto;
-}

@@ -28,8 +28,7 @@
     // .subscribe__form
 
     &__form {
-        display: flex;
-        font-size: 0;
+        @extend %flexbox;
 
     }
 

@@ -14,8 +14,7 @@
     }
 
     &__row {
-        display: flex;
-        font-size: 0;
+        @extend %flexbox;
     }
 
     // .brands__column
@@ -91,15 +90,12 @@
 
     &__logo {
         position: absolute;
-        display: flex;
+        @extend %flexbox;
         flex-direction: column;
-        font-size: 0;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
-        display: flex;
-        font-size: 0;
         transition: all 0.3s ease 0s;
         justify-content: center;
         align-items: center;
